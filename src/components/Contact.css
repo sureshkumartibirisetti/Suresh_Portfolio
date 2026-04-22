@@ -1,0 +1,93 @@
+.contact { border-bottom: none; }
+
+.contact__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact__heading {
+  font-family: var(--serif);
+  font-size: clamp(46px, 6vw, 70px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  position: sticky;
+  top: 120px;
+}
+
+.contact__heading em {
+  font-style: italic;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 8px;
+}
+
+.contact__text {
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--text-secondary);
+}
+
+.contact__links { display: flex; flex-direction: column; gap: 16px; }
+
+.contact__primary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: clamp(13px, 1.8vw, 16px);
+  font-weight: 500;
+  color: var(--text-primary);
+  padding: 22px 28px;
+  border: 1px solid var(--border-med);
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  background: var(--bg-2);
+  word-break: break-all;
+  gap: 12px;
+}
+
+.contact__primary:hover {
+  background: rgba(108,143,255,0.08);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 40px rgba(108,143,255,0.12);
+  transform: translateY(-2px);
+}
+
+.contact__arrow { font-size: 20px; flex-shrink: 0; }
+
+.contact__secondary { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.contact__sec-link {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: var(--bg-2);
+  transition: all 0.2s;
+}
+
+.contact__sec-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(108,143,255,0.08);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact__layout { grid-template-columns: 1fr; gap: 48px; }
+  .contact__heading { position: static; }
+  .contact__primary { font-size: 13px; }
+}

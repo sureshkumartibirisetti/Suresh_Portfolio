@@ -1,0 +1,151 @@
+.achievements .section-heading em {
+  font-style: italic;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ach__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.ach__sublabel {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ach__sublabel::before {
+  content: '';
+  display: inline-block;
+  width: 16px; height: 1px;
+  background: var(--accent);
+}
+
+.ach__certs { display: flex; flex-direction: column; }
+
+.ach__cert {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  transition: padding-left 0.2s;
+}
+
+.ach__cert:first-child { border-top: 1px solid var(--border); }
+.ach__cert:hover { padding-left: 6px; }
+
+.ach__cert-icon {
+  font-size: 22px;
+  line-height: 1;
+  width: 36px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ach__cert-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+  line-height: 1.4;
+}
+
+.ach__cert-issuer {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.ach__profiles { display: flex; flex-direction: column; margin-bottom: 28px; }
+
+.ach__profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: padding-left 0.2s;
+}
+
+.ach__profile:first-child { border-top: 1px solid var(--border); }
+.ach__profile:hover { padding-left: 8px; }
+
+.ach__profile-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.ach__profile-info { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+
+.ach__profile-platform {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.ach__profile-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.ach__profile-stat {
+  font-family: var(--serif);
+  font-size: 22px;
+  color: var(--text-primary);
+  font-style: italic;
+  background: linear-gradient(135deg, var(--text-primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ach__honor {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ach__honor::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: linear-gradient(180deg, var(--gold), transparent);
+}
+
+.ach__honor-icon { font-size: 26px; }
+
+.ach__honor-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.ach__honor-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .ach__layout { grid-template-columns: 1fr; gap: 56px; }
+}
