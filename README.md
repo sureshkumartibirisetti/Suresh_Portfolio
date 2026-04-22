@@ -1,6 +1,5 @@
 # Suresh Kumar — Portfolio
 
-A clean, editorial portfolio website inspired by [julius.fm](https://julius.fm), built with React.
 
 ## Design Philosophy
 - Minimal, typographic, white — large DM Serif Display headings
