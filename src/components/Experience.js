@@ -5,7 +5,7 @@ import './Experience.css';
 const jobs = [
   {
     company: 'Devahuthi Software Solutions',
-    role: 'PLM Developer (Enovia)',
+    role: 'Software Engineer(PLM Developer)',
     period: 'Aug 2025 – Present',
     location: 'Andhra Pradesh',
     current: true,
